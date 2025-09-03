@@ -1,4 +1,4 @@
-name: Publish Python package
+name: publish_to_pypi.yml
 
 on:
   release:
