@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "jiigglecoord"
+name = "JiggleCoord"
 version = "0.0.1"
 authors = [
   { name="Silvio Sopic", email="silvio.sopic@gmail.com" },
