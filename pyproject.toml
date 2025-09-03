@@ -31,3 +31,5 @@ dependencies = [
     "folium",
     "geopy",
 ]
+[tool.hatch.build.targets.wheel]
+packages = ["jiigglecoord"]
