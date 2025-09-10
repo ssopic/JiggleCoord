@@ -17,23 +17,21 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+# The dependencies list:
+dependencies = [
+    "pandas",
+    "folium",
+    "geopy",
+]
+
 [project.urls]
 Homepage = "https://github.com/ssopic/JiggleCoord"
 "Bug Tracker" = "https://github.com/ssopic/JiggleCoord/issues"
 
-[project.dependencies]
-# Dependencies should be in a separate table, not nested under optional-dependencies
-pandas = ">=1.0.0"  # It's good practice to pin versions for predictability
-folium = ">=0.12.1"
-geopy = ">=2.2.0"
-
 [project.optional-dependencies]
 dev = [
-    "pytest",
-    # It's a good practice to include a build tool like hatch itself here
-    "hatchling" 
+    "pytest"
 ]
 
 [tool.hatch.build.targets.wheel]
-# Correct the package name to match your directory name, ensuring correct casing.
 packages = ["JiggleCoord"]
