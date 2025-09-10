@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "JiggleCoord"
 version = "0.0.1"
 authors = [
-  { name="Silvio Sopic", email="silvio.sopic@gmail.com" },
+    { name="Silvio Sopic", email="silvio.sopic@gmail.com" },
 ]
 description = "A Python package to introduce slight perturbations to coordinates."
 readme = "README.md"
@@ -18,18 +18,22 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ssopice/JiiggleCoord"
-"Bug Tracker" = "https://github.com/ssopic/JiiggleCoord/issues"
+Homepage = "https://github.com/ssopic/JiggleCoord"
+"Bug Tracker" = "https://github.com/ssopic/JiggleCoord/issues"
+
+[project.dependencies]
+# Dependencies should be in a separate table, not nested under optional-dependencies
+pandas = ">=1.0.0"  # It's good practice to pin versions for predictability
+folium = ">=0.12.1"
+geopy = ">=2.2.0"
 
 [project.optional-dependencies]
 dev = [
-    "pytest"
+    "pytest",
+    # It's a good practice to include a build tool like hatch itself here
+    "hatchling" 
 ]
 
-dependencies = [
-    "pandas",
-    "folium",
-    "geopy",
-]
 [tool.hatch.build.targets.wheel]
-packages = ["jiigglecoord"]
+# Correct the package name to match your directory name, ensuring correct casing.
+packages = ["JiggleCoord"]
