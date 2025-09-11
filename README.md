@@ -6,3 +6,8 @@
 </div><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
+# Features
+Smart Geocoding: Automatically handles cases where a coordinate falls on a geographical boundary.
+"Snowflake" Perturbation: When a boundary is detected, the package generates a small, structured grid of surrounding points to find the nearest valid location.
+DataFrame Integration: Seamlessly processes large datasets by integrating directly with pandas DataFrames.
+Rate-Limited: Uses geopy's built-in rate limiter to respect API usage policies.
