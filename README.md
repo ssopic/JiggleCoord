@@ -9,7 +9,10 @@
 
 ## Summary
 
-This package provides a robust solution for reverse geocoding geographical coordinates (**returns the address details and merges them into a dataframe**), a task often complicated by points falling on administrative boundaries. It intelligently addresses this challenge by employing a "snowflake" perturbation strategy, where it systematically tests nearby coordinates to "escape" the boundary and find a valid, non-ambiguous location. This functionality is seamlessly integrated with pandas DataFrames, allowing for efficient and reliable geocoding of large datasets for data science and analysis.
+This package provides a robust solution for reverse geocoding geographical coordinates (**returns the address details and merges them into a dataframe**), a task often complicated by points falling on administrative boundaries 
+which results in the coordinate mobing to that boundaries official location, obfuscating where the location actually is.   
+It intelligently addresses this challenge by employing a "snowflake" perturbation strategy, where it systematically tests nearby coordinates to "escape" the boundary and find a valid, non-ambiguous location. 
+This functionality is seamlessly integrated with pandas DataFrames, allowing for efficient and reliable geocoding of large datasets for data science and analysis.
 
 
 ## Features
