@@ -33,7 +33,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ### Full output 
 
-'''     
+
 ### Example 1: Geocoding all rows from a DataFrame
     print("--- Example 1: Geocoding All Rows ---")
     sample_df_all = pd.DataFrame({
