@@ -3,7 +3,7 @@
   
 # JiggleCoord: A geocoding utility for python
 
-<img align="center" alt="GIF" src="https://i.imgur.com/2gKEklX.jpeg" width="150px" height="150" />
+<img align="center" alt="GIF" src="https://i.imgur.com/2gKEklX.jpeg" width="500px" height="500" />
   
 </div><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
