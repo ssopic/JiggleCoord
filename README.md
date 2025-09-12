@@ -74,7 +74,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
     )
     print("\nDataFrame after selectively geocoding 'boundary' rows:")
     print(selective_results[['id', 'latitude', 'longitude', 'class', 'status', 'perturbation_layer', 'display_name']]) 
-  '''
 
 ### Just the pertrubation
 
