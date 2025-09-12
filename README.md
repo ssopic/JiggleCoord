@@ -2,6 +2,8 @@
 <div align="center">
   
 # JiggleCoord: A geocoding utility for python
+
+<img align="left" alt="GIF" src="[https://github.com/ssopic/ssopic/blob/main/seg_img.png](https://github.com/ssopic/JiggleCoord/blob/main/main.jpg)" width="150px" height="150" />
   
 </div><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -24,6 +26,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - geopy
 
 ## Quickstart
+
+
 
 ## Under the hood
 
