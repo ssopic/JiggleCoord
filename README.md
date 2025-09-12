@@ -33,6 +33,49 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ### Full output 
 
+'''     
+### Example 1: Geocoding all rows from a DataFrame
+    print("--- Example 1: Geocoding All Rows ---")
+    sample_df_all = pd.DataFrame({
+        'latitude': [40.7128, 51.5074, 38.8977],
+        'longitude': [-74.0060, -0.1278, -77.0365]
+    })
+
+    # The function will geocode all coordinates since `geocode_on` is not specified
+    all_results = geopy_df_geocoder(
+        sample_df_all,
+        latitude_col='latitude',
+        longitude_col='longitude',
+        perturb_levels=2,
+        perturb_distance=500
+    )
+    print("\nDataFrame after geocoding all rows:")
+    print(all_results[['latitude', 'longitude', 'display_name', 'status', 'perturbation_layer']])
+
+
+### Example 2: Geocoding specific rows based on a condition
+    print("\n--- Example 2: Geocoding Specific Rows (Boundary Condition) ---")
+    sample_df_selective = pd.DataFrame({
+        'id': [1, 2, 3],
+        'latitude': [40.7128, 38.8977, 51.5074],
+        'longitude': [-74.0060, -77.0365, -0.1278],
+        'class': ['place', 'boundary', 'place'],
+        'type': ['city', 'administrative', 'city']
+    })
+
+    # The function will only process the row where 'class' is 'boundary'
+    selective_results = geopy_df_geocoder(
+        sample_df_selective,
+        latitude_col='latitude',
+        longitude_col='longitude',
+        geocode_on="`class` == 'boundary'",
+        perturb_levels=2,
+        perturb_distance=500
+    )
+    print("\nDataFrame after selectively geocoding 'boundary' rows:")
+    print(selective_results[['id', 'latitude', 'longitude', 'class', 'status', 'perturbation_layer', 'display_name']]) 
+  '''
+
 ### Just the pertrubation
 
 
