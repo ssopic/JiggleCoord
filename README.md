@@ -21,7 +21,7 @@ This package provides a robust solution for reverse geocoding geographical coord
 ## Installation
 You can install the package directly from PyPI:
 
-'''pip install JiggleCoord'''
+'''pip install JiggleCoord
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
